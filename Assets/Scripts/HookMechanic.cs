@@ -14,15 +14,15 @@ public class HookMechanic : MonoBehaviour
     private FruitStem currentStem = null;
     private Transform handAnchor;
 
-    void Start()
-    {
-        var anchors = FindObjectsOfType<OVRHandPrefab>();
-        if (anchors.Length > 0)
-            handAnchor = anchors[0].transform;
+   void Start()
+{
+    var rig = FindObjectOfType<OVRCameraRig>();
+    if (rig != null)
+        handAnchor = rig.rightHandAnchor;
 
-        if (progressCircle != null)
-            progressCircle.fillAmount = 0f;
-    }
+    if (progressCircle != null)
+        progressCircle.fillAmount = 0f;
+}
 
     void Update()
     {

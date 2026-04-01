@@ -80,7 +80,9 @@ public class FruitBalance : MonoBehaviour
             rb.isKinematic = false;
             rb.useGravity = true;
         }
-        GetComponent<OVRGrabbable>()?.ForceRelease();
+        var grab = GetComponent<OVRGrabbable>();
+if (grab != null && grab.isGrabbed)
+    grab.grabbedBy.ForceRelease(grab);
     }
 
     public void SetDifficulty(float scale) => instabilityScale = scale;
