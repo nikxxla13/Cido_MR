@@ -59,5 +59,72 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4cda4615a0ea6b04eacbe1f344de299f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2926468539884295303}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4cda4615a0ea6b04eacbe1f344de299f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2609668260898447807}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4cda4615a0ea6b04eacbe1f344de299f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5423050506772311260}
   m_SourcePrefab: {fileID: 100100000, guid: 4cda4615a0ea6b04eacbe1f344de299f, type: 3}
+--- !u!1 &7989206880197947842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4cda4615a0ea6b04eacbe1f344de299f, type: 3}
+  m_PrefabInstance: {fileID: 7070146214465047699}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2926468539884295303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989206880197947842}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4272966, y: 7.073497, z: 3.8465486}
+  m_Center: {x: 0.21918768, y: 3.0652423, z: -1.6134236}
+--- !u!114 &2609668260898447807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989206880197947842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9602546586cd5134fa587827d21fd31d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HookMechanic
+  attachTime: 1.5
+  maxReach: 0.8
+  progressCircle: {fileID: 0}
+--- !u!114 &-5423050506772311260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989206880197947842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVRGrabbable
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
